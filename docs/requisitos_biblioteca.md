@@ -85,16 +85,27 @@ Para esta primeira etapa da trilha de desenvolvimento, o escopo foi delimitado p
 - Estruturas de Classes, Interfaces e Herança (fase Orientação a Objetos).
 - Banco de dados relacional (fase de Persistência).
 - Interface web, API e Spring Boot (fase de Infraestrutura e Serviço).
-- Pagamento de multas e bloqueio de novos empréstimos por inadimplência (regra de negócio assumida como implícita que será refinada quando houver persistência financeira).
+- Pagamento de multas e bloqueio de novos empréstimos por inadimplência.
 
-Este recorte garante que a modelagem arquitetural esteja sólida antes de adicionarmos a complexidade de frameworks ou bancos de dados reais.
+---
 
-REFERÊNCIAS
+## 4. Diagrama de Casos de Uso
 
-DEITEL, Paul; DEITEL, Harvey. Java for Programmers: with Generative AI. 5. ed. Hoboken, New Jersey: Pearson Education, 2025.
+```mermaid
+flowchart LR
+    %% Atores
+    Membro((Membro))
+    Biblio((Bibliotecário))
 
-HORSTMANN, Cay S. Core Java, Vol. I: Fundamentals. 14. ed. Hoboken, New Jersey: Oracle Press, 2026.
+    %% Casos de Uso
+    Emprestimo([Realizar Empréstimo])
+    Devolucao([Realizar Devolução])
+    Reserva([Solicitar Reserva])
 
-GOOGLE. Gemini. Mountain View: Google, 2026. Disponível em: https://gemini.google.com. Acesso em: 10 nov. 2026.
+    %% Relações
+    Membro --> Emprestimo
+    Membro --> Devolucao
+    Membro --> Reserva
 
-LOY, Marc; NIEMEYER, Patrick; LEUCK, Daniel. Learning Java: An Introduction to Real-World Programming with Java. 6. ed. Sebastopol, Califórnia: O'Reilly Media, 2023.
+    Biblio --> Emprestimo
+    Biblio --> Devolucao
