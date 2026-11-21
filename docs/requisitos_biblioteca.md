@@ -2,13 +2,11 @@ Instituto Infnet
 
 Engenharia de Software
 
-Classe GRLENGR1C2-N1-L1
+Projeto de Bloco: Desenvolvimento Back-End
 
-Projeto de Bloco: Desenvolvimento Back-End [26E4_5]
+Professor Orlando Fonseca Guilarte
 
-Professor Orlando Fonseca Guilarte orlando.guilarte@prof.infnet.edu.br 
-
-Discente Carlos André Cordeiro de Oliveira carlos.cordeiro@al.infnet.edu.br
+Discente Carlos A C Oliveira
 
 # Sistema de Gestão de Biblioteca Universitária
 **Documento de Requisitos, Casos de Uso e Escopo**
